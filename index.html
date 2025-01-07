@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Waleed Ehab</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("CbkJ0shK4jPbfDNb-"); // استبدل بـ User ID الخاص بك من EmailJS
+        })();
+    </script>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('ar')">العربية</button>
+        <button onclick="changeLanguage('es')">Español</button>
+        <button onclick="changeLanguage('de')">Deutsch</button>
+    </div>
+    
+<!-- زر تبديل الوضع -->
+<button id="theme-toggle">🌙</button>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="c:\Users\ayat\OneDrive\Desktop\website persontly - Copy\photo_2025-01-06_18-21-04.jpg" alt="Logo" class="logo-img"> <!-- أضف الشعار هنا -->
+                Waleed Ehab <!-- اسمك -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" data-translate="about">About Me</a></li>
+                <li><a href="#skills" data-translate="skills">Skills</a></li>
+                <li><a href="#projects" data-translate="projects">Projects</a></li>
+                <li><a href="#contact" data-translate="contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1 data-translate="welcome">Welcome, I'm Waleed Ehab</h1>
+            <p data-translate="tagline">A passionate web developer and AI enthusiast</p>
+            <a href="#about" class="cta" data-translate="learnMore">Learn More</a>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <h2 data-translate="about">About Me</h2>
+        <p data-translate="aboutText">I am a student passionate about programming and web development. I started my journey with languages like HTML, CSS, and JavaScript and C++, and I am fascinated by everything related to artificial intelligence and web development. I strive to enhance my skills and contribute to shaping a bright future in these fields.</p>
+        <a href="c:\Users\ayat\OneDrive\Desktop\website persontly - Copy\CV 2025 -2026 .pdf" download class="cta" data-translate="downloadCV">Download CV</a>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 data-translate="skills">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C++</div>
+            <div class="skill">Photoshop</div>
+            <div class="skill">Scratch</div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 data-translate="projects">Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <h3 data-translate="project1">Personal Website</h3>
+                <p data-translate="project1Desc">A personal portfolio website built using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project">
+                <h3 data-translate="project2">XO Game</h3>
+                <p data-translate="project2Desc">An interactive Tic-Tac-Toe game developed using JavaScript.</p>
+            </div>
+            <div class="project">
+                <h3 data-translate="project3">Christmas Tree</h3>
+                <p data-translate="project3Desc">An animated Christmas tree website with custom JavaScript effects.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="social-media" class="social-media">
+        <h2 data-translate="socialmedia2">Social media</h2>
+        <div class="social-icons">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/waleed.ehab.1428" target="_blank" class="social-icon">
+                <img src="c:\Users\ayat\OneDrive\Desktop\website persontly - Copy\photo_facebook.jpg" alt="Facebook">
+            </a>
+    
+            <!-- WhatsApp -->
+            <a href="https://wa.me/+201112532891" target="_blank" class="social-icon">
+                <img src="c:\Users\ayat\OneDrive\Desktop\website persontly - Copy\photo_watshp.jpg" alt="WhatsApp">
+            </a>
+    
+            <!-- Viber -->
+            <a href="viber://chat?number=+201112532891" target="_blank" class="social-icon">
+                <img src="c:\Users\ayat\OneDrive\Desktop\website persontly - Copy\photo  vuber .jpg" alt="Viber">
+            </a>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <h2 data-translate="contact">Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/mnnnoojl" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name" data-translate="namePlaceholder" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" data-translate="emailPlaceholder" required>
+            <textarea id="message" name="message" placeholder="Your Message" data-translate="messagePlaceholder" required></textarea>
+            <button type="submit" data-translate="send">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p data-translate="footer">&copy; 2025 Waleed Ehab. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
